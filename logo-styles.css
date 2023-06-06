@@ -1,0 +1,36 @@
+html * {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(160, 187, 204, 0.2);
+}
+.test-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: space-between;
+  padding: 64px 128px;
+}
+
+.customer-logo {
+  background-color: #fff;
+  width: calc(25% - 48px);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  transition: 300ms ease box-shadow;
+
+  /* width: 25%; */
+}
+
+.customer-logo svg {
+  max-height: 80px;
+  max-width: 60%;
+}
+
+.customer-logo:hover {
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.16);
+  transition: 300ms ease box-shadow;
+}
