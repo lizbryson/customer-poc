@@ -3,34 +3,54 @@ html * {
 }
 body {
   background-color: rgba(160, 187, 204, 0.2);
+  padding-top: 128px;
 }
 .test-container {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 48px;
-  justify-content: space-between;
-  padding: 64px 128px;
+  gap: 32px;
+  justify-content: center;
 }
 
 .customer-logo {
-  background-color: #fff;
   width: calc(25% - 48px);
   text-align: center;
-  padding: 2rem 1rem;
   border-radius: 0.5rem;
   transition: 300ms ease box-shadow;
-
-  /* width: 25%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
-
 .customer-logo svg {
-  max-height: 80px;
-  max-width: 60%;
+  max-height: 56px;
+  max-width: 80%;
+}
+.customer-logo.is-contained {
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+.customer-logo.is-grayscale path {
+  fill: #999 !important;
+}
+.customer-logo.is-white path {
+  fill: #fff !important;
 }
 
 .customer-logo:hover {
   box-shadow: 0 16px 16px rgba(0, 0, 0, 0.16);
   transition: 300ms ease box-shadow;
+}
+
+/* POC Control Panel */
+.aem-controls {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
 }
